@@ -1,15 +1,28 @@
 <script setup>
+// import * as animationData from '@/assets/helloLottie.json'
 import { RouterLink, RouterView } from 'vue-router'
 import Nav from './components/nav.vue'
+
+// // const defaultOptions = {
+//   animationData: animationData.default
+// }
 </script>
 
 <template>
-
-  <div>
+  <div class="appContainer">
     <Nav />
-    <div>
-      <RouterView />
-    </div>
+    <!-- <div class="qwqw">
+      <lottie-animation
+    :animation-data="WatermelonJSON"
+    :auto-play="true"
+    :loop="true"
+    :speed="1"
+    ref="anim"
+  />
+    </div> -->
+    
+    
+    <RouterView />
   </div>
   <!-- <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
@@ -26,7 +39,12 @@ import Nav from './components/nav.vue'
 </template>
 
 <style>
+
+.appContainer{
+  display: flex;
+  flex-direction: column;
+}
 body{
-  margin: 0% !important;
+  margin: 0px;
 }
 </style>
